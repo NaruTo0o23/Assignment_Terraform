@@ -13,8 +13,7 @@ Step 4. To build the Infrastructure (Instance) Run the command <br />
 Step 5. Then Check Your Aws EC2 instance console <br />
   &emsp;&emsp; ==> A new ec2 instance has been launched <br />
   &emsp;&emsp; ==> You can check using ssh using key_pair key and public ip <br />
-  &emsp;&emsp; ==> " $ ssh -i key.pem user@ec2-public-ip " <br /> <br /> <br />
-# DONE
+  &emsp;&emsp; ==> " $ ssh -i key.pem user@ec2-public-ip " <br /> <br />
 ======================================================================================<br />
 &emsp;&emsp;&emsp;&emsp; NOW TO INSTALL WEB SERVER USING ANSIBLE <br />
 ======================================================================================<br /> <br />
@@ -22,4 +21,6 @@ Step 1. Configure Your inventory replacing your instance public ip Address <br /
 Step 2. Run command " $ ansible-playbook -i <inventory_path> Deploy_Server.yml " <br /><br />
 Step 3. Check Web Server Running by going on ip " http://ec2-public-ip:80 " <br /><br /><br /><br /><br />
 
-==> NOTE. Replace ec2-public-ip with public ip taken from running instance.
+==> NOTE. Replace ec2-public-ip with public ip taken from running instance. <br /> <br />
+
+# DONE
