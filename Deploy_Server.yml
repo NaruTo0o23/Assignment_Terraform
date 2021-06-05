@@ -1,0 +1,12 @@
+- name: Install Nginx Server And Run its Service
+  hosts: all
+  tasks:
+          - name: Nginx Package Installation
+            package:
+                    name: nginx
+                    state: present
+          - name: Nginx Service Start
+            service:
+                    name: nginx
+                    state: started
+                    enabled: yes
